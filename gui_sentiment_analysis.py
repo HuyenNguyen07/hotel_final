@@ -203,11 +203,6 @@ def pre_process(comment,emoji_dict, english_dict, teen_dict, wrong_lst,stopwords
 #     sa_model = pickle.load(file)
 
 
-# # Đọc model
-with open("sentiment_analysis.pkl", 'rb') as file:  
-    sa_model = pickle.load(file)
-
-
 # # Hàm lấy lat, lon
 # def get_coordinates(address):
 #     geolocator = Nominatim(user_agent="geoapiExercises")
