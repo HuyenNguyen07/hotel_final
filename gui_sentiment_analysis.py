@@ -200,7 +200,7 @@ def pre_process(comment,emoji_dict, english_dict, teen_dict, wrong_lst,stopwords
 
 # Đọc model
 with open("sentiment_analysis.pkl", 'rb') as file:  
-    sa_model = pickle.load(file)
+    sa_model = pickle.load(file,globals=globals())
 
 
 # # Hàm lấy lat, lon
